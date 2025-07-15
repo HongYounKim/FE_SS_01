@@ -20,6 +20,10 @@ const Tab = styled.button`
   cursor: pointer;
   font-weight: ${({ active }) => (active ? "bold" : "normal")};
   color: ${({ active }) => (active ? "#1e1e1e" : "#888")};
+
+  padding-bottom: 8px;
+  border-bottom: ${({ active }) =>
+    active ? "2px solid #1e1e1e" : "2px solid transparent"};
 `;
 
 const RightSection = styled.div`
